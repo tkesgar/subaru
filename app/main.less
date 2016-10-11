@@ -1,0 +1,97 @@
+@import (less) '_bootstrap.less';
+
+// ---------------------------------------------------------------------------
+// Using System UI Fonts In Web Design: A Quick Practical Guide
+// https://www.smashingmagazine.com/2015/11/using-system-ui-fonts-practical-guide/
+// ---------------------------------------------------------------------------
+
+body
+{
+  font-family:
+    -apple-system, BlinkMacSystemFont,
+    "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell",
+    "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+}
+
+// ---------------------------------------------------------------------------
+// Header
+// ---------------------------------------------------------------------------
+
+.header
+{
+  background: #333;
+  color: #eee;
+
+  h1
+  {
+    font-weight: lighter;
+  }
+}
+
+// ---------------------------------------------------------------------------
+// Input
+// ---------------------------------------------------------------------------
+
+.container-thin
+{
+  max-width: 768px;
+}
+
+.input
+{
+  margin: 20px auto;
+}
+
+.input.checkbox
+{
+  padding-left: 10px;
+}
+
+// ---------------------------------------------------------------------------
+// About
+// ---------------------------------------------------------------------------
+
+.about
+{
+  margin: 40px auto;
+}
+
+// ---------------------------------------------------------------------------
+// Footer
+// ---------------------------------------------------------------------------
+
+.footer
+{
+  // Make fixed
+  &.fixed
+  {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+  }
+
+  padding: 20px 0;
+  background: #eee;
+  color: #777;
+  text-align: center;
+
+  ul
+  {
+    list-style-type: none;
+    margin: 5px auto;
+    padding: 0;
+
+    li
+    {
+      display: inline-block;
+      margin: 0 10px;
+    }
+  }
+
+  p
+  {
+    margin: 0;
+  }
+}
