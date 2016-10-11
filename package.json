@@ -13,7 +13,8 @@
   "scripts": {
     "watch": "brunch w -s",
     "clean": "del-cli public/** !public",
-    "build": "npm run clean && brunch b -p"
+    "build": "npm run clean && brunch b -p",
+    "dploy": "dploy"
   },
   "repository": {
     "type": "git",
@@ -34,14 +35,15 @@
     "babel-preset-latest": "^6.14.0",
     "brunch": "^2.8.2",
     "clean-css-brunch": "^2.0.0",
+    "clipboard": "^1.5.12",
     "css-brunch": "^2.6.1",
     "del-cli": "^0.2.0",
+    "dploy": "^1.2.0",
     "javascript-brunch": "^2.0.0",
     "less-brunch": "^2.7.1",
     "postcss-brunch": "^0.5.0",
     "postcss-cssnext": "^2.8.0",
-    "uglify-js-brunch": "^2.0.1",
-    "clipboard": "^1.5.12"
+    "uglify-js-brunch": "^2.0.1"
   },
   "dependencies": {
     "express": "^4.14.0"
