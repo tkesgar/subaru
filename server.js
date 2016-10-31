@@ -1,21 +1,14 @@
-'use strict'
-
 const express = require('express')
 
 const port = process.env.PORT || 8080
+const basedir = __dirname + '/public'
+
 const app = express()
 
-// Enable if behind reverse proxy
-app.enable('trust proxy')
-
-// Serve static files
-app.use(express.static(__dirname + '/public'))
-
-// Serve index.html
-app.get('*', (request, response) => {
-  response.sendFile(__dirname + '/public/index.html')
-})
+// HTML5 pushState: serve static files or index.html for everything else
+app.use(express.static(basedir))
+app.get('*', (req, res) => res.sendFile('index.html', { root: basedir }))
 
 // Start listening
 app.listen(port)
-console.log(`Server started on port ${port}`)
+console.log(`Server started at port ${port}`)

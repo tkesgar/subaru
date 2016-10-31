@@ -56,7 +56,7 @@ let inputSpaces = document.getElementById('spaces')
 inputSpaces.addEventListener('change', e => spaces(e.target.checked))
 
 let inputNormal = document.getElementById('normal')
-inputNormal.addEventListener('input', e => text(e.target.value))
+inputNormal.addEventListener('change', e => text(e.target.value))
 
 // ---------------------------------------------------------------------------
 // Clipboard global paste and copy
