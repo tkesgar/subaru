@@ -1,6 +1,6 @@
 {
   "name": "subaru",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "The fastest and smallest full-width text generator",
   "private": true,
   "homepage": "http://tkesgar.github.io/subaru",
